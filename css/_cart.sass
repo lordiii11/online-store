@@ -1,0 +1,179 @@
+.carts
+    width: 652px
+
+.cart
+    margin-top: 96px
+    margin-bottom: 128px
+    display: flex
+    justify-content: space-between
+
+    &_box
+        width: 652px
+        height: 306px
+        display: flex
+        margin-bottom: 40px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &_pic
+        width: 263px
+        height: 306px
+
+    &_pic_size
+        width: 100%
+
+    &_shopping
+        display: flex
+        justify-content: space-between
+        margin-top: 75px
+
+    &_shopping_button
+        padding: 16px 40px
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        border: 1px solid #A4A4A4
+        &:hover
+            background: $selectColor
+            border: 1px solid #FF6A6A
+            color: #FFFFFF
+
+.order
+    width: 262px
+    height: 222px
+    padding-left: 32px
+    padding-right: 57px
+    &_info
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+
+    &_title
+        font-style: normal
+        font-weight: normal
+        padding-top: 22px
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+
+    &_price
+        padding-top: 42px
+
+    &_quantity
+        display: flex
+
+    &_numbers
+        border: 1px solid #EAEAEA
+        outline: none
+        width: 43px
+        height: 24px
+        margin-left: 24px
+        text-align: center
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 22px
+        color: #656565
+        &:focus
+            border: 1px solid #7bc1f7
+            box-shadow: 0px 0px 5px #7bc1f7
+        &::-webkit-outer-spin-button
+        &::-webkit-inner-spin-button
+            display: none
+
+    &_price_bucks
+        color: $selectColor
+
+.close_button
+    margin-top: 28px
+    margin-right: 22px
+
+.shipping_input
+    display: flex
+    flex-direction: column
+    margin-top: 17px
+    margin-bottom: 17px
+
+.shipping_heading
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+
+.shipping_box
+    border: 1px solid #A4A4A4
+    width: 360px
+    height: 45px
+    box-sizing: border-box
+    margin-top: 20px
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+    padding-left: 16px
+    &:focus
+        outline: none
+        border: 1px solid #7bc1f7
+        box-shadow: 0px 0px 5px #7bc1f7
+
+.shipping_quote
+    margin-top: 24px
+    border: 1px solid #A4A4A4
+    width: 100px
+    height: 34px
+    box-sizing: border-box
+    padding-top: 10px
+    font-style: normal
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+    text-align: center
+    &:hover
+        background: $selectColor
+        color: #FFFFFF
+
+.total
+    background: #F5F3F3
+    width: 360px
+    height: 150px
+    margin-top: 58px
+
+.grand__price
+    padding-top: 12px
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+    text-align: right
+    padding-right: 37px
+    margin-bottom: 21px
+    &_bucks
+        padding-left: 16px
+        color: $selectColor
+
+.line__total
+    background: #E2E2E2
+    width: 273px
+    height: 1px
+    margin: 0 auto
+    margin-bottom: 17px
+
+.checkout_button
+    margin-top: 17px
+    background: #F16D7F
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    margin: 0 auto
+    display: block
+    text-align: center
+    line-height: 19px
+    padding-top: 16px
+    box-sizing: border-box
+    color: #FFFFFF
+    width: 273px
+    height: 50px

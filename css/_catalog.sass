@@ -1,0 +1,230 @@
+.arrivals
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &_heading
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+    &_nav
+        display: flex
+        list-style-type: none
+
+    &_link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $selectColor
+
+    &_list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            font-weight: bold
+            color: $selectColor
+
+.filter-sort
+    margin-top: 51px
+    margin-bottom: 16px
+    display: flex
+
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    top: -12px
+    &_summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+
+    &_details
+        padding: 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        &[open]
+            width: 360px
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            & .filter_summary
+                color: $selectColor
+            & path
+                fill: $selectColor
+
+    &_details_in
+        margin-top: 16px
+        &[open] .filter_heading_in
+            color: $selectColor
+
+    &_summary_in
+        border-left: 5px solid $selectColor
+
+    &_heading_in
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: $selectColor
+        display: block
+        color: #6F6E6E
+        padding: 8px 0 11px 11px
+        border-bottom: 1px solid #EBEBEB
+
+    &_ul
+        list-style-type: none
+        padding-left: 17px
+        padding-top: 24px
+        & a
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+
+.sort
+    position: relative
+
+    &__summary_text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        padding-right: 10px
+
+    &__summary
+        margin-right: 28px
+        &[open]
+            color: $selectColor
+
+    &__summary::after
+        content: url(../img/cat_arrow_down.svg)
+
+    &_ul
+        position: absolute
+        margin-top: 5px
+        z-index: 1
+        padding-top: 7px
+        padding-bottom: 11px
+        padding-left: 9px
+        width: 79px
+        height: 103px
+        left: 46%
+        box-sizing: border-box
+        list-style-type: none
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.size_list
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    color: #6F6E6E
+    align-items: center
+    display: flex
+    padding-bottom: 6px
+
+.size_check
+    margin-right: 9px
+
+.pagination
+    border: 1px solid #EBEBEB
+    margin: 0px auto 96px auto
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 283px
+    height: 43px
+
+.page__arrow_left
+    margin-left: 16px
+    &:hover path
+        fill: $selectColor
+
+.page__arrow_right
+    margin-right: 16px
+    &:hover path
+        fill: $selectColor
+
+.page_link
+    padding: 0 5px 0 5px
+    box-sizing: border-box
+    font-weight: 300
+    font-size: 18px
+    line-height: 19px
+    color: #6E6C6C
+    opacity: 0.65
+    &:hover
+        color: $selectColor
+
+.goods
+    height: 341px
+    background: #222224
+
+    &_top
+        display: flex
+        justify-content: space-between
+        flex-grow: 1
+
+.delivery_img
+    padding-top: 103px
+    text-align: center
+
+.sales_img
+    padding-top: 103px
+    text-align: center
+
+.quality_img
+    padding-top: 103px
+    text-align: center
+
+.h3_delivery
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 28px
+
+.h3_sales
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 19px
+
+.h3_quality
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 25px
+
+.delivery
+    width: 360px
+    height: 340px
+
+.sales
+    width: 360px
+    height: 340px
+
+.quality
+    width: 360px
+    height: 340px
